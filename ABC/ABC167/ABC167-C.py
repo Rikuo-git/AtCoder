@@ -6,7 +6,7 @@ for i in range(n):
 l = []
 b = [[a[j][i] for j in range(n)] for i in range(m)]
 nums = [("0" * n + bin(i)[2:])[-n:] for i in range(1, 2 ** n)]
-*s = map(sum,zip(*a[i] for i in ranen(n)))
+
 for i in nums:
     if min(sum(k[j] * int(i[j]) for j in range(len(i))) for k in b) >= x:
         l.append(sum(c[j] * int(i[j]) for j in range(len(i))))
@@ -23,10 +23,10 @@ print(m % M - 1)
 # -~ = +1 ~- = -1
 # zip 複数のiterable を同時に扱う
 # *list 要素を展開
-#リストの縦の足し算と横の足し算
+# リストの縦の足し算と横の足し算
 s = list(map(sum, zip(*t)))
-t = list(map(sum,t))
- #縦横変換
+t = list(map(sum, t))
+# 縦横変換
 s = list(map(list, zip(*t)))
 
 # a*boolen or b True の値が採用
