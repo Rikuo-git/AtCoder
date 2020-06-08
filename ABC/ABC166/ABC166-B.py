@@ -13,4 +13,4 @@ print(n - len(a))
 # solution by c_r_5
 n, _, *t = ''.join([*open(0)][::2]).split()
 print(int(n) - len({*t}))
-# リストの偶数ばんめ　[1::2]
+# リストの偶数ばんめ　[1::2-1]
