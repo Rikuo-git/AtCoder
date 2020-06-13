@@ -1,3 +1,5 @@
+# pypy でaccept ver
+
 from collections import deque
 
 n, m = map(int, input().split())
@@ -30,7 +32,7 @@ def bfs():
 
 
 print(bfs())
-
+# 全探索　TLE
 from collections import deque
 
 n, m = map(int, input().split())
@@ -49,4 +51,4 @@ print(a)
 # shortest
 from scipy.ndimage import *
 
-print(morphology.distance_transform_cdt([[t > '#' for t in s[:-1]] for s in open(0)][1:], 'taxicab').max())
+print(distance_transform_cdt([[t != '#' for t in input()] for _ in range(n)], 'taxicab').max())
