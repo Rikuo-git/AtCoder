@@ -1,0 +1,4 @@
+.mypy_cache
+contest.acc.json
+test/
+tests/
